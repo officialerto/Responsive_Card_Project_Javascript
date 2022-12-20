@@ -1,0 +1,173 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: 0;
+	border: none;
+	outline: none;
+}
+
+body{
+
+	margin: 0;
+	padding: 0;
+	position: relative;
+	min-height: 100vh;
+	background-color: #27292e;
+	font-family: 'poppins', sans-serif;
+	text-align: center;	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.container{
+
+	padding: 40px;
+	display: flex;
+	position: absolute;
+	top:170px;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+
+}
+
+.erto{
+
+	font-size: 25px;
+	position: absolute;
+	margin: 20px 50px;
+	padding: 33px 55px;
+	top: 530px;
+	background-color: #1b1b1f;
+	transition: all 0.25s ease-in-out;  
+	cursor: pointer;
+	box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.3);
+
+	background-position: right;
+	background-size: 10px;
+	z-index: -1;
+
+}
+
+.erto .card_erto{
+
+	position: relative;
+	top: -10px;
+	margin: 0;
+	padding: 0;
+
+}
+
+.erto h1{
+
+	color: white;
+	letter-spacing: 1px;
+	padding: 0;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+
+}
+
+.erto h5{
+
+	color: white;
+	letter-spacing: 2px;
+	position: absolute;
+	top: 55px;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+
+}
+
+.erto.selected::before{
+
+	content: "";
+	width: 50%;
+	height: 50%;
+	position: absolute;
+	right: -25px;
+	bottom: -30px;
+	background: url(https://i.imgur.com/WunqBPz.png) ;
+	background-position: right;
+	background-size: 10px;
+	z-index: -1;
+
+}
+
+.erto.selected{
+
+	background-color: #161619;
+	box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.3);
+
+}
+
+
+.card{
+
+	width: 305px;
+	margin: 25px;
+	padding: 40px 30px;
+	background-color: #1b1b1f;
+	position: relative;
+	transition: all 0.25s ease-in-out;  
+	cursor: pointer;
+
+}
+
+.card .card_icon{
+
+	width: 100%;
+	margin-bottom: 40px;
+
+}
+
+.card .card_icon img{
+
+	height: 75px;
+
+}
+
+.card h6{
+
+	margin-bottom: 10px;
+	color: #ffffff;
+	font-size: 16px;
+	font-weight: 600;
+	letter-spacing: 0.5px;
+
+}
+
+.card ul li{
+
+	list-style: none;
+	padding: 3px 0;
+	color: #ffffff;
+	font-size: 16px;
+	font-weight: 300;
+	opacity: 0.7;
+}
+
+.card.selected::before{
+
+	content: "";
+	width: 50%;
+	height: 50%;
+	position: absolute;
+	right: -25px;
+	bottom: -30px;
+	background: url(https://i.imgur.com/WunqBPz.png) ;
+	background-position: right;
+	background-size: 10px;
+	z-index: -1;
+}
+
+.card.selected{
+
+	background-color: #161619;
+	box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.3);
+
+}
